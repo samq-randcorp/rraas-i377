@@ -1,3 +1,5 @@
 *.class
 /build
 /bin
+/Web-Content/WEB-INF/lib/*.jar
+/*.war
