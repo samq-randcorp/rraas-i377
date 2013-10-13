@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <meta charset=utf-8>
-<link rel="stylesheet" href="Style.css" />
+<link rel="stylesheet" href="WEB-INF/Style.css" />
 <title>Add</title>
 </head>
 <body>

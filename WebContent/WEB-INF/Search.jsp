@@ -5,10 +5,11 @@
 <html lang="en">
 <head>
 <meta charset=utf-8>
-<link rel="stylesheet" href="Style.css" />
 <title>Search</title>
+
 </head>
 <body>
+
 <%@ include file="Menu.jsp" %>
 
 	<form method="get" action="Search">

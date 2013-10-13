@@ -21,6 +21,8 @@
 		<war destfile="${war.file}" webxml="${webContent.dir}/WEB-INF/web.xml">
 			<classes dir="${classes.dir}" />
 			<fileset dir="${webContent.dir}" excludes="**/servlet-api-jar-2.5.jar" />
+			<!--kopeerin kompilleerides, sest war ei toeta nested kopeerimist-->
+				
 		</war>
 	</target>
 	
@@ -37,6 +39,13 @@
 		<javac srcdir="${src.dir}" destdir="${classes.dir}" source="1.6" target="1.6" includeantruntime="false">
 			<classpath refid="classpath" />
 		</javac>
+		
+		<copy todir="${classes.dir}">
+		    <fileset dir="${src.dir}">
+		      <include name="*.sql"/>
+		    </fileset>
+		  </copy>
+	
 	</target>
 
 	<target name="init">
