@@ -23,7 +23,7 @@ jobs:
         distribution: 'adopt'
     - name: Install Ivy
       run: |
-        apt-get -y unzip
+        apt-get install -y unzip
         curl -LJO https://apache.osuosl.org//ant/ivy/2.5.0/apache-ivy-2.5.0-bin.zip
         unzip ./apache-ivy-2.5.0-bin.zip
         mv ./apache-ivy-2.5.0/ivy-2.5.0.jar $HOME/.ant/lib
