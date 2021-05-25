@@ -39,4 +39,5 @@ jobs:
         export WS_ENABLEIMPACTANALYSIS=true
         export WS_REQUIREKNOWNSHA1=false
         export WS_RESOLVEALLDEPENDENCIES=false
+        export WS_INCLUDES=**/*.jar
         java -jar wss-unified-agent.jar -appPath $WARFILE -d ./ -product GH_${{ github.event.repository.name }} -project ${{ github.ref }}_Prioritize -iaLanguage Java
