@@ -5,9 +5,7 @@ name: WS-SCAN-UA-only
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches: [ UA-only ]
 
 jobs:
   build:
