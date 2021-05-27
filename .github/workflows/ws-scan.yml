@@ -36,6 +36,7 @@ jobs:
         export WS_ENABLEIMPACTANALYSIS=true
         export WS_REQUIREKNOWNSHA1=false
         export WS_RESOLVEALLDEPENDENCIES=false
+        export WS_ANT_RESOLVEDEPENDENCIES=true
         export WS_ANT_IVY_RESOLVEDEPENDENCIES=true
         export WS_FILESYSTEMSCAN=false
-        java -jar wss-unified-agent.jar -appPath $WARFILE -d ./ -product GH_${{ github.event.repository.name }} -project ${{ github.ref }}_Prioritize
+        java -jar wss-unified-agent.jar -appPath $WARFILE -d ./ -product GH_${{ github.event.repository.name }} -project ${{ github.ref }}_Prioritize-ResolveDep
