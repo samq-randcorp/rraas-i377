@@ -3,3 +3,8 @@
 /bin
 /WebContent/WEB-INF/lib/*.jar
 /*.war
+
+# eclipse
+/.settings
+.project
+.classpath
